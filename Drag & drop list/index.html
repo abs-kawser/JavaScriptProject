@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!-- its import from https://cdnjs.com/libraries/Sortable  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"> </script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="item">
+            <span class="text">Drag Element one</span>
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <div class="item">
+            <span class="text">Drag Element two</span>
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <div class="item">
+            <span class="text">Drag Element three</span>
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <div class="item">
+            <span class="text">Drag Element four</span>
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <div class="item">
+            <span class="text">Drag Element five</span>
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+
+    <script>
+
+        const dragArea=document.querySelector(".wrapper");
+        new Sortable(dragArea ,{
+            animation:350
+        });
+    </script>
+</body>
+</html>
